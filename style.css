@@ -177,7 +177,8 @@ footer div h2 {
 footer div nav {
   text-align: center;
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  height: 100px;
 
   
 }
