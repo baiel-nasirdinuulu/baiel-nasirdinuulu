@@ -157,10 +157,12 @@ code {
   font-size: 15px;
 }
 .containn ul {
+    text-align: center;
   list-style: none;
   font-size: 20px;
 }
 footer div {
+
   width: 90%;
   margin: 0 auto;
 
@@ -175,6 +177,7 @@ footer div h2 {
 footer div nav {
   text-align: center;
   display: flex;
+  padding-bottom: 40px;
 
   
 }
