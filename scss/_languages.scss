@@ -1,0 +1,76 @@
+.languages {
+  &__title1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 80px;
+    color: $main-color;
+    text-transform: capitalize;
+  }
+  &__menu {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  &__title {
+    color: $main-color;
+
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    margin-right: 5px;
+  }
+  &__span {
+    color: $main-color;
+    font-style: italic;
+    font-size: 16px;
+  }
+}
+.en {
+  position: relative;
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    content: "";
+    background-image: url("https://cleandye.com/wp-content/uploads/2020/01/English-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}
+.rus {
+  position: relative;
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    content: "";
+    background-image: url("https://cdn-icons-png.flaticon.com/512/323/323300.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}
+.kyr {
+  position: relative;
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    content: "";
+    background-image: url("https://cdn.countryflags.com/thumbs/kyrgyzstan/flag-round-250.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}

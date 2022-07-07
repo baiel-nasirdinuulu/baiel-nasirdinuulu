@@ -1,0 +1,148 @@
+@import "./vars";
+
+.topbar {
+  background-color: $bg-color;
+  padding-top: 10px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+  &__list {
+    align-items: center;
+    flex-wrap: wrap;
+
+    display: flex;
+
+    margin: 0 10px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $topbar-color;
+    transition: all 0.6s;
+    padding: 10px 0;
+
+    &:hover {
+      transform: rotate(0.5turn);
+    }
+  }
+  &__facebook {
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_432951.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__twitter {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Twitter_font_awesome.svg/1200px-Twitter_font_awesome.svg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__tik-tok {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/TikTok_Icon_Black.svg/1200px-TikTok_Icon_Black.svg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__youtube {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/152/152810.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  &__instagramm {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Font_Awesome_5_brands_instagram.svg/1792px-Font_Awesome_5_brands_instagram.svg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    content: "";
+    width: 20px;
+
+    height: 20px;
+  }
+  &__telephone {
+    position: relative;
+    border-right: 1px solid rgb(137, 129, 129);
+
+    padding: 5px 30px;
+    transform: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      transition: all 0.5s;
+    }
+    &:hover {
+      transform: scale(0.6);
+    }
+  }
+  &__email {
+    padding-left: 30px;
+
+    position: relative;
+    transform: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("http://simpleicon.com/wp-content/uploads/mail-5.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      left: 0;
+
+      transition: all 0.5s;
+    }
+    &:hover {
+      transform: scale(0.6);
+    }
+  }
+}
+@media screen and (max-width: 428px) {
+  .topbar__menu {
+    margin: auto;
+  }
+  .topbar__list {
+    margin: 0 auto;
+  }
+  .menu2 {
+    display: flex;
+    gap: 0px;
+  }
+}
+
+@media screen and(max-width:400px) {
+  .topbar__telephone {
+    border: none;
+  }
+}

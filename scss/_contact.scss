@@ -1,0 +1,128 @@
+.contact {
+  &__inner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+
+    color: $main-color;
+    font-size: 32px;
+
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    flex-wrap: wrap;
+  }
+  &__h4 {
+    color: $main-color;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__p {
+    color: $main-color;
+    text-decoration: none;
+  }
+  &__item {
+    text-decoration: none;
+
+    color: $main-color;
+  }
+  &__contact {
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &__s {
+    width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    background-image: url("../img/facebook.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__a {
+    margin-top: 10px;
+    width: 60px;
+    height: 40px;
+    background-image: url("../img/insatgramm.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__d {
+    margin-top: 10px;
+    width: 60px;
+    height: 40px;
+    background-image: url("../img/watsap.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__f {
+    margin-top: 10px;
+    width: 60px;
+    height: 40px;
+    background-image: url("../img/teleg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.lo {
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    content: "";
+    background-image: url("https://image.similarpng.com/very-thumbnail/2021/01/Location-icon-design-on-transparent-background-PNG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}
+.pho {
+  position: relative;
+  padding-left: 40px;
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    content: "";
+    background-image: url("../img/phone.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}
+
+.em {
+  position: relative;
+  padding-left: 10px;
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    content: "";
+    background-image: url("http://simpleicon.com/wp-content/uploads/mail-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+  }
+}

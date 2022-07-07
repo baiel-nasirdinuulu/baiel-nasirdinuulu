@@ -1,0 +1,35 @@
+.code {
+  &__title {
+    text-transform: capitalize;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: $main-color;
+    font-weight: 700;
+  }
+  &__info {
+    text-align: center;
+    color: $main-color;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  &__second-info {
+    font-size: 22px;
+    color: rgb(2, 43, 248);
+  }
+  &__code {
+    margin: auto;
+
+    background-color: $bg-color;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    min-height: 200px;
+  }
+  &__example {
+    color: $second-color;
+
+    font-size: 15px;
+  }
+}

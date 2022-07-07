@@ -1,0 +1,36 @@
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: $second-color;
+  text-align: center;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.4s;
+
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    width: 115px;
+    height: 3px;
+    background-color: $second-color;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    width: 115px;
+    height: 3px;
+    background-color: $second-color;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  &:hover {
+    transform: translateY(-2.1rem);
+  }
+}

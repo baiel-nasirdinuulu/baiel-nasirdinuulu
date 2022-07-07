@@ -1,0 +1,70 @@
+.hero {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  min-height: 75vh;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    max-width: 500px;
+
+    text-align: center;
+  }
+  &__img {
+    max-width: 350px;
+  }
+  &__text {
+    font-size: 42px;
+    margin-top: 0;
+    text-transform: capitalize;
+    color: $main-color;
+    margin-bottom: 50px;
+  }
+  &__title {
+    text-transform: capitalize;
+
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 50px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+      content: "";
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &::after {
+      position: absolute;
+      background-image: url("https://www.iconpacks.net/icons/2/free-rating-star-icon-2793-thumb.png");
+      content: "";
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &__long-text {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: $main-color;
+  }
+}

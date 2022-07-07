@@ -1,0 +1,80 @@
+.education {
+  background-color: $bg-color;
+  &__inner {
+    padding: 40px 0px;
+    text-align: center;
+  }
+  &__title {
+    color: $second-color;
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__p {
+    color: $second-color;
+    font-size: 22px;
+    text-decoration: none;
+
+    text-transform: capitalize;
+    transition: all 0.8s;
+    &:hover {
+      color: black;
+    }
+  }
+}
+.footer {
+  &__inner {
+    text-align: center;
+    padding: 30px 0px;
+  }
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__list {
+    color: $second-color;
+    font-size: 18px;
+  }
+  &__a {
+    text-decoration: none;
+    font-size: 22px;
+    color: $second-color;
+    margin-left: 5px;
+  }
+}
+.edu {
+  position: relative;
+
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 7px;
+    top: 0;
+  }
+}
+.edu {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 40px;
+  &::after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/0/07/Ala-Too_International_University_Seal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    top: 0;
+  }
+}

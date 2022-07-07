@@ -1,0 +1,17 @@
+.footer {
+  background-color: $bg-color;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  &__link {
+    text-decoration: none;
+    color: $second-color;
+    font-size: 23px;
+    transition: all 0.4s;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
