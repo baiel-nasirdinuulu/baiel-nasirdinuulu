@@ -46,13 +46,12 @@
   transition: all 0.4s;
   &:hover {
     color: rgb(81, 171, 126);
-    border-bottom: 2px solid rgb(254, 254, 254);
   }
 }
 
 .menu__showder {
   position: absolute;
-  top: 85px;
+  top: 60px;
   display: flex;
   flex-direction: column;
 
@@ -61,14 +60,14 @@
   margin: 0;
   padding: 10px 10px;
 }
-
+.button {
+  display: none;
+}
 @media screen and (min-width: 1151px) {
   .container {
     width: 100%;
   }
-  .menu__showder {
-    display: none;
-  }
+
   .header__menu {
     position: static;
     display: flex;
@@ -76,30 +75,27 @@
 
     flex-direction: row;
   }
-  .button {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1150px) {
   .container {
     width: 100%;
   }
+
+  .menu__showder {
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    display: none;
+  }
   .button {
     display: flex;
-  }
-  .menu__showder {
-    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
   .container {
     width: 100%;
   }
-  .button {
-    display: flex;
-    float: right;
-  }
+
   .menu__showder {
     width: 100%;
   }
@@ -110,38 +106,9 @@
     width: 100%;
     margin: auto;
   }
-  .button {
-    display: flex;
-  }
+
   .menu__showder {
     width: 100%;
-  }
-  .registr {
-    position: relative;
-    position: absolute;
-    top: 85px;
-
-    left: 140px;
-  }
-  .registr__link {
-    padding: 8px;
-
-    background-color: rgb(209, 209, 209);
-    color: $main-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .registr__link1 {
-    position: relative;
-    background-color: rgb(209, 209, 209);
-    color: $main-color;
-    position: absolute;
-    top: 80px;
-    left: 20px;
-
-    border-radius: 15px;
-    padding: 5px;
   }
 }
 .active {

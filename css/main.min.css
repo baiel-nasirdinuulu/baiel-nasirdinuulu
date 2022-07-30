@@ -205,12 +205,11 @@ li {
   -webkit-transition: all 0.4s;
   transition: all 0.4s; }
   .header__link:hover {
-    color: #51ab7e;
-    border-bottom: 2px solid #fefefe; }
+    color: #51ab7e; }
 
 .menu__showder {
   position: absolute;
-  top: 85px;
+  top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,11 +221,12 @@ li {
   margin: 0;
   padding: 10px 10px; }
 
+.button {
+  display: none; }
+
 @media screen and (min-width: 1151px) {
   .container {
     width: 100%; }
-  .menu__showder {
-    display: none; }
   .header__menu {
     position: static;
     display: -webkit-box;
@@ -238,28 +238,23 @@ li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
-  .button {
-    display: none; } }
+            flex-direction: row; } }
 
 @media screen and (max-width: 1150px) {
   .container {
     width: 100%; }
+  .menu__showder {
+    background-color: #e1e1e1;
+    width: 100%;
+    display: none; }
   .button {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .menu__showder {
-    width: 100%; } }
+    display: flex; } }
 
 @media screen and (max-width: 450px) {
   .container {
     width: 100%; }
-  .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right; }
   .menu__showder {
     width: 100%; } }
 
@@ -267,33 +262,8 @@ li {
   .container {
     width: 100%;
     margin: auto; }
-  .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .menu__showder {
-    width: 100%; }
-  .registr {
-    position: relative;
-    position: absolute;
-    top: 85px;
-    left: 140px; }
-  .registr__link {
-    padding: 8px;
-    background-color: #d1d1d1;
-    color: black;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .registr__link1 {
-    position: relative;
-    background-color: #d1d1d1;
-    color: black;
-    position: absolute;
-    top: 80px;
-    left: 20px;
-    border-radius: 15px;
-    padding: 5px; } }
+    width: 100%; } }
 
 .active {
   color: green; }

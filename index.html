@@ -82,7 +82,7 @@
       <div class="container">
         <div class="header__inner">
           <a href="#" class="header__logo logo"> BN </a>
-          <ul class="header__menu menu__showder">
+          <ul class="header__menu menu__showder" id="header">
             <li class="header__item">
               <a href="#home" class="header__link active" id="#home">home</a>
             </li>
@@ -105,7 +105,7 @@
             </li>
           </ul>
 
-          <button class="button">
+          <button class="button" id="but" onclick="press()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -114,6 +114,14 @@
             >
               <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
             </svg>
+          </button>
+          <button class="button" id="newb" onclick="newbut()">
+            <img
+              src="https://flyclipart.com/thumbs/x-cross-close-symbol-icon-button-gui-close-x-1633922.png"
+              alt=""
+              width="24px"
+              height="24px"
+            />
           </button>
         </div>
       </div>
@@ -258,5 +266,6 @@
         >
       </div>
     </footer>
+    <script src="./style.js"></script>
   </body>
 </html>
