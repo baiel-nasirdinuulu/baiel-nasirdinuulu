@@ -1,1 +1,1 @@
-https://baiel-nasirdinuulu.github.io/cv2/
+https://baiel-nasirdinuulu.github.io/baiel-nasirdinuulu/
